@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pholly.Sample.Shared", "Pholly.Sample.Shared\Pholly.Sample.Shared.csproj", "{DBD514D6-DAC1-4027-AD3A-3D975950C3B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pholly.Sample.App", "Pholly.Sample.App\Pholly.Sample.App.csproj", "{2660FD81-C696-42FC-9758-D421B85662CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pholly.Sample.ConsoleApp", "Pholly.Sample.ConsoleApp\Pholly.Sample.ConsoleApp.csproj", "{2660FD81-C696-42FC-9758-D421B85662CB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pholly.Sample.xUnitTests", "Pholly.Sample.xUnitTests\Pholly.Sample.xUnitTests.csproj", "{2DA9C2C3-8A51-4024-8081-27CECFA009FF}"
 EndProject
