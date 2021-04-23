@@ -8,7 +8,12 @@ namespace Pholly.Sample.App
         static ActivityTracker _activityTracker = new();
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Console.WriteLine("Simple Activity Tracker");
+            Console.WriteLine(@"AddAction(""jump"", 100)");
+            Console.WriteLine(@"AddAction(""run"", 75)");
+            Console.WriteLine(@"AddAction(""jump"", 200)");
+
             AddAction("jump", 100);
             AddAction("run", 75);
             AddAction("jump", 200);
