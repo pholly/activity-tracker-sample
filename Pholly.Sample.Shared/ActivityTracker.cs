@@ -39,6 +39,12 @@ namespace Pholly.Sample.Shared
                 throw;
             }
 
+            //return error if time is negative
+            if (activity.Time < 0)
+            {
+                return new ActivityTrackerError("AddAction error: time cannot be negative");
+            }
+
             //atomic and thread-safe to handle concurrent requests
             _activityStats.AddOrUpdate(activity.Action.ToLower(),
                 new ActivityStat()

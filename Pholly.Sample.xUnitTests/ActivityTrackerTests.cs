@@ -75,10 +75,12 @@ namespace Pholly.Sample.xUnitTests
             var emptyResult = activityTracker.AddAction("");
             var invalidJsonResult = activityTracker.AddAction("action is jump and time is 100");
             var unexpectedJsonResult = activityTracker.AddAction(@"""action"": ""jump"", ""timeToComplete"": 100");
+            var negativeTimeJsonResult = activityTracker.AddAction(JsonSerializer.Serialize(new Activity() { Action = "jump", Time = -50 }));
             Assert.NotNull(nullResult);
             Assert.NotNull(emptyResult);
             Assert.NotNull(invalidJsonResult);
             Assert.NotNull(unexpectedJsonResult);
+            Assert.NotNull(negativeTimeJsonResult);
         }
 
         static ActivityTrackerError AddAction(ActivityTracker tracker, string action, int timeInSeconds)
